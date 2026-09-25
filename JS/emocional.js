@@ -128,9 +128,9 @@ function estadistica(datos) {
         fechaemocion.textContent = emocion.FECHA_REG;
         intensidadpredominante.textContent = emocion.INTENSIDAD;
         barras += `
-            <div class="w-full flex flex-col items-center gap-2">
-                <div class="w-full bg-verde-menta rounded-t-lg transition-all hover:brightness-110" style="height: ${emocion.INTENSIDAD}%;">${emocion.INTENSIDAD}</div>
-                <span class="font-label-sm text-label-sm rotate-45 mt-4">${emocion.NOMBRE}</span>
+            <div class="w-full flex flex-col items-center gap-2 h-full justify-end">
+                <div class="w-full bg-primary-container rounded-t-lg transition-all hover:brightness-110 flex items-center justify-center text-xs font-bold" style="height: ${emocion.INTENSIDAD*10}%;">${emocion.INTENSIDAD}</div>
+                <span class="font-label-sm text-label-sm rotate-45 mt-4 whitespace-nowrap">${emocion.NOMBRE}</span>
             </div>
         `;
         historial += `

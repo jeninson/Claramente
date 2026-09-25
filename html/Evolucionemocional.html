@@ -297,21 +297,25 @@
                 <div class="glass-card rounded-3xl p-8 soft-glow flex flex-col gap-6">
                     <h2 class="font-title-lg text-title-lg text-on-surface">Frecuencia</h2>
                     <div class="flex-1 flex items-end justify-between gap-4 px-2" id="grafico-frecuencia">
-                        <div class="w-full flex flex-col items-center gap-2">
-                            <div class="w-full bg-verde-menta rounded-t-lg transition-all hover:brightness-110" style="height: 80%;">8</div>
-                            <span class="font-label-sm text-label-sm rotate-45 mt-4">Calma</span>
+                        <div class="w-full flex flex-col items-center gap-2 h-full justify-end">
+                            <!-- La barra interna ahora responde correctamente al style="height: X%" -->
+                            <div class="w-full bg-verde-menta rounded-t-lg transition-all hover:brightness-110 flex items-center justify-center text-xs font-bold" style="height: 8%;">8</div>
+                            <span class="font-label-sm text-label-sm rotate-45 mt-4 whitespace-nowrap">Calma</span>
                         </div>
-                        <div class="w-full flex flex-col items-center gap-2">
-                            <div class="w-full bg-primary-container rounded-t-lg transition-all hover:brightness-110" style="height: 45%;">45</div>
-                            <span class="font-label-sm text-label-sm rotate-45 mt-4">Paz</span>
+                        
+                        <div class="w-full flex flex-col items-center gap-2 h-full justify-end">
+                            <div class="w-full bg-primary-container rounded-t-lg transition-all hover:brightness-110 flex items-center justify-center text-xs font-bold" style="height: 45%;">45</div>
+                            <span class="font-label-sm text-label-sm rotate-45 mt-4 whitespace-nowrap">Paz</span>
                         </div>
-                        <div class="w-full flex flex-col items-center gap-2">
-                            <div class="w-full bg-calm-peach rounded-t-lg transition-all hover:brightness-110" style="height: 30%;">30</div>
-                            <span class="font-label-sm text-label-sm rotate-45 mt-4">Duda</span>
+                        
+                        <div class="w-full flex flex-col items-center gap-2 h-full justify-end">
+                            <div class="w-full bg-calm-peach rounded-t-lg transition-all hover:brightness-110 flex items-center justify-center text-xs font-bold" style="height: 30%;">30</div>
+                            <span class="font-label-sm text-label-sm rotate-45 mt-4 whitespace-nowrap">Duda</span>
                         </div>
-                        <div class="w-full flex flex-col items-center gap-2">
-                            <div class="w-full bg-outline-variant rounded-t-lg transition-all hover:brightness-110" style="height: 15%;">15</div>
-                            <span class="font-label-sm text-label-sm rotate-45 mt-4">Estrés</span>
+                        
+                        <div class="w-full flex flex-col items-center gap-2 h-full justify-end">
+                            <div class="w-full bg-outline-variant rounded-t-lg transition-all hover:brightness-110 flex items-center justify-center text-xs font-bold" style="height: 15%;">15</div>
+                            <span class="font-label-sm text-label-sm rotate-45 mt-4 whitespace-nowrap">Estrés</span>
                         </div>
                     </div>
                 </div>
